@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyFirstSiteCore</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+    </environment>
+    <link href="~/lib/bootstrap/dist/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/lib/owlCarousel/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/lib/owlCarousel/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
+    <div class="header-1">
+        <div class="topbar d-none d-md-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-6 col-md-6">
+                        <p class="mb-0">
+                            Welcome to my site</p>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="sosmed-icon d-inline-flex pull-right">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="middlebar d-none d-sm-block">
+            <div class="container">
+                <div class="contact-info mt-1">
+                    <div class="box-icon-1">
+                        <div class="icon">
+                            <div class="fa fa-phone"></div>
+                        </div>
+                        <div class="body-content">
+                            <div class="heading">Call Today :</div>
+                            +38(098)620 36 96
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="navbar-main">
+            <div class="container">
+                <nav id="navbar-example" class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="/images/client5.png" alt="" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " asp-controller="Home" asp-action="Index">
+                                    HOME
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="AboutUs" asp-action="About_As">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Serv" asp-action="Services">
+                                    SERVICES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Gell" asp-action="Gallery">
+                                    GALLERY
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Cont" asp-action="Contact">CONTACT</a>
+                            </li>
+
+                        </ul>
+                        <a href="#" class="btn btn-secondary btn-nav btn-rect ml-auto">GET AN APPOINTMENT</a>
+                    </div>
+                </nav> 
+
+            </div>
+        </div>
+    </div>
+    <partial name="_CookieConsentPartial" />
+    @RenderBody()
+
+    <div class="foot bg-overlay-secondary" data-background="images/dummy-img-1920x900-3.jpg">
+        <div class="content-wrap">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="footer-item">
+                            <img src="/images/logo_footer.png" alt="logo bottom" class="logo-bottom">
+                            <div class="spacer-20"></div>
+                            <p>We are pets center at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                            <div class="spacer-20"></div>
+                            <img src="/images/payment.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="footer-item">
+                            <div class="footer-title">
+                                Opening Hours
+                            </div>
+                            <p>Our support available to help you 24 hours a day. We provide our best.</p>
+                            <ul class="list">
+                                <li>
+                                    Mon - Fri : 08.00 am - 20.00 pm
+                                </li>
+                                <li>
+                                    Saturday : 09.00 am - 20.00 pm
+                                </li>
+                                <li>
+                                    Sunday :  We Are Closed
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="footer-item">
+                            <div class="footer-title">
+                                Contact Info
+                            </div>
+                            <p>Lit sed The Best in dolor sit amet consectetur</p>
+                            <ul class="list-info">
+                                <li>
+                                    <div class="info-icon text-primary">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                    <div class="info-text">Krivoy rog 5-gornyatskiy</div>
+                                </li>
+                                <li>
+                                    <div class="info-icon text-primary">
+                                        <span class="fa fa-phone"></span>
+                                    </div>
+                                    <div class="info-text">+38(098)620 36 96</div>
+                                </li>
+                                <li>
+                                    <div class="info-icon text-primary">
+                                        <span class="fa fa-envelope"></span>
+                                    </div>
+                                    <div class="info-text">opletinenko@gmail.com</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fcopy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <p class="ftex">&copy; 2019 Your Company. Oleg <span class="text-primary">Pletinenko</span></p>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <div class="sosmed-icon d-inline-flex float-right">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+        </script>
+    </environment>
+<script src="~/lib/bootstrap/dist/js/jquery.magnific-popup.min.js" asp-append-version="true"></script>
+<script src="~/lib/owlCarousel/js/owl.carousel.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
